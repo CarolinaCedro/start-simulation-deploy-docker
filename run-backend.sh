@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 ./backend.sh
 
 echo "Conectando container na mesma rede: ..."

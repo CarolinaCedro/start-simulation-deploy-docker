@@ -10,6 +10,6 @@ services:
     env_file:
       - .env
     ports:
-      - "8080:80"
+      - "8305:80" # Mapeando a porta 8305 do host para a porta 80 do contêiner
     volumes:
       - .:/app

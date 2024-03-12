@@ -15,4 +15,4 @@ CMD ["java", "-jar", "start-back-0.0.1-SNAPSHOT.jar"]
 
 
 #Porta padrão
-EXPOSE 6000
+EXPOSE 8304

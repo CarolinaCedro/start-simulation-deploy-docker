@@ -14,7 +14,7 @@ containers=("start-backend" "start-frontend")
 for container in "${containers[@]}"
 do
     if docker inspect -f '{{.State.Running}}' "$container" >/dev/null 2>&1; then
-        if docker network inspect -f '{{range .Containers}}{{.Name}}{{end}}' "$NETWORK_NAME" | grep -q "\b$container\b"; then
+        if docker network inspect -f '{{range .Containers}}{{.Name}}{{end}}' "$NETWORK_NAME" | grep -q "\\b$container\\b"; then
             echo "O contêiner $container já está conectado à rede $NETWORK_NAME."
         else
             docker network connect "$NETWORK_NAME" "$container"

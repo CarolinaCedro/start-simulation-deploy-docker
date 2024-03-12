@@ -1,7 +1,8 @@
 #!/bin/bash
 
-./backend.sh
 frontend_dir="./start-front"
+backend_dir="./start-back"
+
 
 
 "$backend_dir/backend.sh"

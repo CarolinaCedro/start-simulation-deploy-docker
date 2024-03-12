@@ -1,8 +1,8 @@
 #!/bin/bash
 
-current_path=$(dirname "$0")
-
-cd "$current_path"
+#current_path=$(dirname "$0")
+#
+#cd "$current_path"
 
 #current_branch=$(git branch --show-current)
 #echo "Executando o script na branch: $current_branch"

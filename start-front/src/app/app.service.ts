@@ -10,7 +10,7 @@ export class AppService {
   constructor(private http: HttpClient) {
   }
 
-  baseUrl: string = "http://localhost:8080";
+  baseUrl: string = "http://localhost:8304";
 
   getTasks(): Observable<any> {
     return this.http.get(`${this.baseUrl}/api/start`);

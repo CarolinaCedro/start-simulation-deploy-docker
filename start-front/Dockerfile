@@ -14,9 +14,8 @@ COPY . .
 
 RUN npm run build
 
-
-ENV PORT="4200"
+ENV PORT=80
 
 EXPOSE $PORT
 
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+CMD ["ng", "serve", "--host", "0.0.0.0", "--port", "80"]

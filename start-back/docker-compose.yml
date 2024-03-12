@@ -10,4 +10,4 @@ services:
     env_file:
       - .env
     ports:
-      - "6000:8080" # Mapeando a porta 8080 do contêiner para a porta 6000 do host
+      - "8304:8080" # Mapeando a porta 8080 do contêiner para a porta 6000 do host
