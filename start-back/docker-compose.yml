@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  backend:
+    container_name: start-back-backend
+    image: start-back:homolog
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "6000:8080" # Mapeando a porta 8080 do contêiner para a porta 6000 do host
